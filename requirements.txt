@@ -1,5 +1,4 @@
 streamlit==1.32.0
-prophet==1.1.5
 cmdstanpy==1.2.0
 plotly==5.19.0
 pandas==2.0.3
