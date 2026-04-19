@@ -83,8 +83,6 @@ if uploaded_file is not None:
         df_prophet = df[["Дата", TARGET] + top_regressors].copy()
         df_prophet.columns = ["ds", "y"] + top_regressors
 
-        df_prophet = df_prophet.drop_duplicates(subset=["ds"])
-
         train = df_prophet[df_prophet["ds"] < TEST_START].copy()
         test  = df_prophet[df_prophet["ds"] >= TEST_START].copy()
 
